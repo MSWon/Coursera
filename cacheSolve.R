@@ -1,5 +1,7 @@
 Enter file contents here
 
+
+#### The following function cache the inverse of matrix ####
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
     set <- function(y) {
@@ -16,7 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
          getinverse = getinverse)
 }
 
-
+#### The following function solve the inverse of special "matrix" created with the above function. ####
+#### It first checks to see if the inverse of matrix has already been solved. #### 
 cacheSolve <- function(x, ...) {
   m <- x$getinverse()
   if(!is.null(m)){
